@@ -6,7 +6,7 @@ The first question to be solved is the definition of KV cache. When LLM is infer
 
 The contiguous allocation brings severe problems. As allocation size is fixed, internal fragments appear if usage size is shorter than allocation size. What's more, after several times of allocation, new request may be refused if leaving space is enough but be divided into different places, which we called this phenomenon as external fragments.
 
-![KV cache fragmentation](https://aka.doubaocdn.com/s/lI2BjDnzJl)
+![KV cache fragmentation](https://aka.doubaocdn.com/s/K3PpU5gVUz)
 
 Now let's review what OS does to solve the problem. It uses a technology called paging. Paging divides virtual memory into pages and divides main memory into page frames at the same size, therefore the precise mapping relationship that is recorded at files named page tables can be established. Each process has its own page table. What's more, pages are continuous while page frame could be discrete, so external fragments would not appear.
 
