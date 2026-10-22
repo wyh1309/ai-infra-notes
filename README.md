@@ -1,10 +1,10 @@
 # AI Infra Notes
 
-Notes on LLM inference, CUDA, and distributed systems. Study notes from the AI Infra / LLM inference learning plan (2026–2027).
+Study notes on LLM inference, CUDA, GPU memory, and distributed systems. Working through the AI Infra / LLM inference roadmap week by week (2026–2027).
 
 ## Blog
 
-GitHub Pages: https://wyh1309.github.io/ai-infra-notes/
+Published articles: https://wyh1309.github.io/
 
 ## Posts
 
