@@ -21,7 +21,6 @@ The mapping between OS paging and PagedAttention is almost one to one:
 | Virtual page number | Logical block number |
 | Physical page frame | Physical KV block in GPU memory |
 | Process | Sequence (one request) |
-| External fragmentation | Eliminated |
 
 The rule is simple. The KV cache of one sequence is not stored continuously. It is cut into fixed-size blocks. Each block holds the K and V of 16 tokens, for all layers. For a 7B model, one token takes about 512 KB of KV cache, so one block of 16 tokens is about 8 MB.
 
